@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             Display display=((WindowManager)getSystemService(WINDOW_SERVICE)).getDefaultDisplay();
             int xOffset=(int)Math.random()*display.getWidth();
             int yOffset=(int)Math.random()*display.getHeight();
-            toast.setGravity(Gravity.TOP|Gravity.LEFT,xOffset,yOffset);
+            toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL,0,70);
             toast.show();
         }
     };
